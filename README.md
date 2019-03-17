@@ -10,7 +10,9 @@ Analysis of the [Appointments No-Show dataset](https://d17h27t6h515a5.cloudfront
 
 This dataset required some **wrangling** to address: missing data, correcting data types, removing outliers, and fixing miss-entries. Since the response class is very unbalanced (4:1 ratio), we used an oversampling technique ([SMOTE](https://arxiv.org/pdf/1106.1813.pdf)) to avoid model overfitting.
 
-After investigating which variables correlate to the attendance rate, and performing some feature engineering to create dummy variables, a Logistic Regression model is fitted and evaluated. 
+After investigating which variables correlate to the attendance rate, and performing some feature engineering to create dummy variables, we conduct a [Recursive Feature Elimination with Cross-Validation](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV) to identify the most important explanatory variables.
+
+Finally, the Logistic Regression model is fitted and evaluated. 
 
 ## Technologies Used
 
