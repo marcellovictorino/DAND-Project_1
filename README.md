@@ -38,7 +38,7 @@ Finally, the Logistic Regression model is fitted and evaluated.
 - Medical Conditions: patients suffering from alcoholism and diabetes seems to be slightly more likely to attend
 - Even though there is evidence receiving an SMS  reminder seems to make the patients less likely to show up, we decided to ignore this correlation due to lack of explainability
 
-Overall, the Logistic model predicts the right outcome 63% of the time ($$\frac{TP + TN}{Total}$$). Which is better than flipping a coin, but still has room for improvement before it can be considered useful.
+Overall, the Logistic model predicts the right outcome 63% of the time ( (TP + TN) / Total). Which is better than flipping a coin, but still has room for improvement before it can be considered useful.
 
 
 
